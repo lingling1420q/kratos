@@ -1,6 +1,10 @@
 # 准备工作
 
-推荐使用[kratos工具](kratos-tool.md)快速生成带`--grpc`的项目，如我们生成一个叫`kratos-demo`的项目。
+推荐使用[kratos工具](kratos-tool.md)快速生成带`grpc`的项目，如我们生成一个叫`kratos-demo`的项目。
+
+```
+kratos new kratos-demo --proto
+```
 
 # pb文件
 
@@ -161,7 +165,10 @@ func (d *Dao) SayHello(c context.Context, req *demoapi.HelloReq) (resp *grpcempt
 
 # 扩展阅读
 
-[warden拦截器](warden-mid.md) [warden基于pb生成](warden-pb.md) [warden服务发现](warden-resolver.md) [warden负载均衡](warden-balancer.md)
+[warden拦截器](warden-mid.md)  
+[warden基于pb生成](warden-pb.md)  
+[warden服务发现](warden-resolver.md)  
+[warden负载均衡](warden-balancer.md) 
 
 -------------
 
