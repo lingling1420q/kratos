@@ -1,9 +1,10 @@
 package cache
 
-import "github.com/bilibili/kratos/pkg/stat/metric"
+import "github.com/go-kratos/kratos/pkg/stat/metric"
 
 const _metricNamespace = "cache"
 
+// be used in tool/kratos-gen-bts
 var (
 	MetricHits = metric.NewCounterVec(&metric.CounterVecOpts{
 		Namespace: _metricNamespace,
